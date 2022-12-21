@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.hpp                                      :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amimouni <amimouni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/28 11:22:09 by amimouni          #+#    #+#             */
-/*   Updated: 2022/12/12 00:56:24 by amimouni         ###   ########.fr       */
+/*   Created: 2022/12/21 01:26:07 by amimouni          #+#    #+#             */
+/*   Updated: 2022/12/21 01:27:23 by amimouni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#if !defined PHONEBOOK_HPP
-#define PHONEBOOK_HPP
+#include "Harl.hpp"
+#include <iostream>
 
-# include "contact.hpp"
-# include <iostream>
 
-class phonebook
+int	main()
 {
-    private:
-        int _index;
-        contact _contact[8];
-    public:
-        phonebook();
-        ~phonebook();
-    void    searchContact() const;
-    void    addContact();        
-};
-#endif 
+	Harl	harl;
+	
+	harl.complain("debug");
+	harl.complain("info");
+	harl.complain("warning");
+	harl.complain("error");
+	
+	harl.complain("wrong_entry");
+	return (0);
+}

@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.hpp                                      :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amimouni <amimouni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/28 11:22:09 by amimouni          #+#    #+#             */
-/*   Updated: 2022/12/12 00:56:24 by amimouni         ###   ########.fr       */
+/*   Created: 2022/12/20 06:47:58 by amimouni          #+#    #+#             */
+/*   Updated: 2022/12/21 00:01:03 by amimouni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#if !defined PHONEBOOK_HPP
-#define PHONEBOOK_HPP
 
-# include "contact.hpp"
-# include <iostream>
+#if !defined(HARL_HPP)
+# define HARL_HPP
 
-class phonebook
+#include <iostream>
+
+class Harl
 {
-    private:
-        int _index;
-        contact _contact[8];
-    public:
-        phonebook();
-        ~phonebook();
-    void    searchContact() const;
-    void    addContact();        
+private:
+    void debug();
+    void info();
+    void warning();
+    void error();
+public:
+    Harl();
+    ~Harl();
+
+    void complain(std::string level);
 };
+
 #endif 

@@ -6,18 +6,18 @@
 #    By: amimouni <amimouni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/28 11:14:59 by amimouni          #+#    #+#              #
-#    Updated: 2022/12/13 23:18:57 by amimouni         ###   ########.fr        #
+#    Updated: 2022/12/17 05:41:23 by amimouni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS			= phonebook.cpp contact.cpp main.cpp 
+SRCS			= Account.cpp tests.cpp 
 OBJS			= $(SRCS:.cpp=.o)
 
 CPP				= c++
 RM				= rm -f
 CPPFLAGS		= -Wall -Wextra -Werror -std=c++98
 
-NAME			= MyPhonebook
+NAME			= Bankster
 
 all:			$(NAME)
 
